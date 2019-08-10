@@ -13,6 +13,8 @@ public class TC001_Login extends com.leafBot.testng.api.base.ProjectSpecificMeth
 	@Test(dataProvider="fetchData")
 	public void runLogin(String username, String password) {
 		
+		
+		System.out.println("Hello World!!!");
 		new LoginPage()
 		.enterUsername(username)
 		.enterPassword(password)
