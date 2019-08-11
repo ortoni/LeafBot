@@ -2,8 +2,8 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
   <test thread-count="5" name="Test">
-    <classes>
-      <class name="com.leafBot.testcases.TC001_Login"/>
-    </classes>
+  	<classes>
+ 		<class name="runner.LoginUsingCucumber"></class> 	
+  	</classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

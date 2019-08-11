@@ -9,25 +9,18 @@ public class TC001_Login extends com.leafBot.testng.api.base.ProjectSpecificMeth
 	@BeforeTest
 	public void setData() {
 		excelFileName="TC001";
+		testcaseName = "Login";
+		testcaseDec = "Login";
+		author = "balaji";
+		category = "smoke";
 	}
 	@Test(dataProvider="fetchData")
 	public void runLogin(String username, String password) {
-		
-		
-		System.out.println("Hello World!!!");
 		new LoginPage()
 		.enterUsername(username)
 		.enterPassword(password)
 		.clickLogin()
 		.clickLogout();
-		
-		/*LoginPage page = new LoginPage();
-		page.enterUsername();
-		page.enterPassword();
-		page.clickLogin();
-		
-		HomePage page1 = new HomePage();
-		page1.clickLogout();*/
 		
 		
 		
